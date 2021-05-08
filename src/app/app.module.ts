@@ -22,7 +22,8 @@ import { FormsModule } from "@angular/forms";
 import { MatFormFieldModule } from "@angular/material/form-field";
 import { MatInputModule } from "@angular/material/input";
 import { MatSnackBarModule } from "@angular/material/snack-bar";
-import { CategoriaDeleteComponent } from './components/views/categoria/categoria-delete/categoria-delete.component';
+import { CategoriaDeleteComponent } from "./components/views/categoria/categoria-delete/categoria-delete.component";
+import { CategoriaUpdateComponent } from './components/views/categoria/categoria-update/categoria-update.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -33,6 +34,7 @@ import { CategoriaDeleteComponent } from './components/views/categoria/categoria
     CategoriaReadComponent,
     CategoriaCreateComponent,
     CategoriaDeleteComponent,
+    CategoriaUpdateComponent,
   ],
   imports: [
     BrowserModule,
