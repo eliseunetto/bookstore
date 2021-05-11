@@ -1,0 +1,42 @@
+<form>
+  <h1>Apagar Livro</h1>
+  <mat-form-field class="campoDoFormulario">
+    <mat-label>Título</mat-label>
+    <input matInput [(ngModel)]="livro.titulo" name="titulo" disabled />
+  </mat-form-field>
+
+  <mat-form-field class="campoDoFormulario">
+    <mat-label>Autor</mat-label>
+    <input matInput [(ngModel)]="livro.autor" name="autor" disabled />
+  </mat-form-field>
+
+  <mat-form-field class="campoDoFormulario">
+    <mat-label>Texto</mat-label>
+    <textarea
+      matInput
+      [(ngModel)]="livro.texto"
+      name="texto"
+      disabled
+    ></textarea>
+  </mat-form-field>
+
+  <div class="buttons">
+    <button
+      (click)="delete()"
+      class="mat-elevation-z8"
+      mat-stroked-button
+      color="primary"
+    >
+      Apagar
+    </button>
+
+    <button
+      (click)="cancelar()"
+      class="mat-elevation-z8"
+      mat-stroked-button
+      color="warn"
+    >
+      Cancelar
+    </button>
+  </div>
+</form>

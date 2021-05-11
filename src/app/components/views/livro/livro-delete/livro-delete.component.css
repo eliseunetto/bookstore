@@ -1,0 +1,25 @@
+form {
+    width: 70%;
+    text-align: center;
+    margin: auto;
+}
+
+form h1 {
+    text-transform: uppercase;
+    color: rgb(221, 216, 216);
+    margin: 2rem auto 2rem auto;
+}
+
+.campoDoFormulario {
+    width: 100%;
+}
+
+.buttons {
+    width: 100%;
+    text-align: start;
+}
+
+button {
+    width: 100px;
+    margin-left: .8rem;
+}

@@ -8,6 +8,7 @@ import { CategoriaReadComponent } from "./components/views/categoria/categoria-r
 import { NgModule } from "@angular/core";
 import { RouterModule, Routes } from "@angular/router";
 import { HomeComponent } from "./components/views/home/home.component";
+import { LivroDeleteComponent } from "./components/views/livro/livro-delete/livro-delete.component";
 
 const routes: Routes = [
   {
@@ -41,6 +42,10 @@ const routes: Routes = [
   {
     path: "categorias/:id_cat/livros/:id/update",
     component: LivroUpdateComponent,
+  },
+  {
+    path: "categorias/:id_cat/livros/:id/delete",
+    component: LivroDeleteComponent,
   },
 ];
 
