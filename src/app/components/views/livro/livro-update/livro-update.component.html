@@ -11,7 +11,7 @@
       placeholder="Ex.: Curso Spring Boot com Angular 10"
       maxlength="100"
     />
-    <mat-error *ngIf="titulo.invalid"> {{ getMessage() }} </mat-error>
+    <mat-error *ngIf="titulo.invalid"> {{ getMessageTitulo() }} </mat-error>
   </mat-form-field>
 
   <mat-form-field class="campoDoFormulario">
@@ -25,7 +25,7 @@
       placeholder="Ex.: Eliseu Netto"
       maxlength="100"
     />
-    <mat-error *ngIf="autor.invalid"> {{ getMessage() }} </mat-error>
+    <mat-error *ngIf="autor.invalid"> {{ getMessageAutor() }} </mat-error>
   </mat-form-field>
 
   <mat-form-field class="campoDoFormulario">
@@ -39,11 +39,12 @@
       placeholder="Ex.: Lorem ipsum"
       maxlength="2000000"
     ></textarea>
-    <mat-error *ngIf="texto.invalid"> {{ getMessage() }} </mat-error>
+    <mat-error *ngIf="texto.invalid"> {{ getMessageTexto() }} </mat-error>
   </mat-form-field>
 
   <div class="buttons">
     <button
+      [disabled]="getMessageFieldErro()"
       (click)="update()"
       class="mat-elevation-z8"
       mat-stroked-button

@@ -14,9 +14,14 @@ form h1 {
     width: 100%;
 }
 
+mat-error {
+    margin-bottom: .5rem;
+}
+
 .buttons {
     width: 100%;
     text-align: start;
+    margin-top: 1rem;
 }
 
 button {

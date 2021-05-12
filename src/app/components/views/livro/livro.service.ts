@@ -25,7 +25,7 @@ export class LivroService {
 
   create(livro: Livro, id_cat: String): Observable<Livro> {
     const url = `${this.baseUrl}/livros?categoria=${id_cat}`;
-    return this.http.put<Livro>(url, livro);
+    return this.http.post<Livro>(url, livro);
   }
 
   update(livro: Livro): Observable<Livro> {
