@@ -15,4 +15,6 @@ span {
 h1 {
     padding-left: 1.2rem;
     font-size: 1.5rem;
+    text-transform: uppercase;
+    font-family: 'Courier New', Courier, monospace;
 }
