@@ -30,8 +30,8 @@
       <ng-container matColumnDef="ler-livro">
         <th mat-header-cell *matHeaderCellDef>LER LIVRO</th>
         <td mat-cell *matCellDef="let row">
-          <a href="#">
-            <i class="livros material-icons">book</i>
+          <a class="livros" routerLink="{{ row.id }}/read">
+            <i class="material-icons">book</i>
           </a>
         </td>
       </ng-container>
