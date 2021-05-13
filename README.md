@@ -1,4 +1,8 @@
-# BookstoreFrontend
+# Bookstore Front end
+
+![bookstore](https://user-images.githubusercontent.com/15930456/118060606-7fae4f00-b369-11eb-8182-ca9a2c5624c8.gif)
+
+## &#128073; [Applicacion link](https://bookstore-en.netlify.app/)
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.2.10.
 
